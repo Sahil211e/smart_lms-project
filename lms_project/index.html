@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Happy Birthday Wish</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    overflow:hidden;
+}
+
+.card{
+    width:90%;
+    max-width:420px;
+    height:620px;
+    background:rgba(255,255,255,0.12);
+    backdrop-filter:blur(15px);
+    border-radius:30px;
+    text-align:center;
+    color:white;
+    padding:30px;
+    box-shadow:0 0 40px rgba(255,255,255,0.2);
+    border:1px solid rgba(255,255,255,0.3);
+    animation:zoom 2s ease;
+}
+
+@keyframes zoom{
+    from{transform:scale(0.3);opacity:0;}
+    to{transform:scale(1);opacity:1;}
+}
+
+h1{
+    font-size:42px;
+    margin-top:40px;
+    background:linear-gradient(90deg,#ffdd00,#ff6ec4,#00f7ff);
+    -webkit-background-clip:text;
+    color:transparent;
+    animation:glow 2s infinite alternate;
+}
+
+@keyframes glow{
+    from{text-shadow:0 0 10px #fff;}
+    to{text-shadow:0 0 25px #ff6ec4;}
+}
+
+.name{
+    font-size:35px;
+    margin:25px 0;
+    color:#ffe066;
+}
+
+.msg{
+    font-size:18px;
+    line-height:1.6;
+    margin-top:20px;
+}
+
+.cake{
+    font-size:90px;
+    animation:bounce 1.5s infinite;
+}
+
+@keyframes bounce{
+    0%,100%{transform:translateY(0);}
+    50%{transform:translateY(-18px);}
+}
+
+.btn{
+    margin-top:35px;
+    display:inline-block;
+    padding:14px 25px;
+    background:#25D366;
+    color:white;
+    text-decoration:none;
+    border-radius:50px;
+    font-weight:bold;
+    box-shadow:0 0 20px #25D366;
+}
+
+.balloon{
+    position:absolute;
+    bottom:-100px;
+    font-size:35px;
+    animation:float 7s linear infinite;
+}
+
+@keyframes float{
+    from{transform:translateY(0);}
+    to{transform:translateY(-110vh);}
+}
+</style>
+</head>
+
+<body>
+
+<div class="balloon" style="left:10%;animation-delay:0s;">🎈</div>
+<div class="balloon" style="left:30%;animation-delay:2s;">🎉</div>
+<div class="balloon" style="left:55%;animation-delay:1s;">🎁</div>
+<div class="balloon" style="left:75%;animation-delay:3s;">🎈</div>
+<div class="balloon" style="left:90%;animation-delay:4s;">✨</div>
+
+<div class="card">
+    <div class="cake">🎂</div>
+    <h1>Happy Birthday</h1>
+
+    <div class="name">Dear Friend</div>
+
+    <div class="msg">
+        May your life be filled with happiness, success, love and unlimited blessings.  
+        Wishing you a very special birthday full of beautiful memories.
+    </div>
+
+    <a class="btn" 
+       href="https://wa.me/?text=Happy%20Birthday%20Dear%20Friend%20🎂🎉%20May%20your%20life%20be%20filled%20with%20happiness%20and%20success!"
+       target="_blank">
+       Send on WhatsApp
+    </a>
+</div>
+
+</body>
+</html>
